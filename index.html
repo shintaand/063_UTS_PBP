@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>The Wedding of Ae-sun & Gwan-sik</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600&family=Reenie+Beanie&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="petal-container" id="petalContainer"></div>
+    <div class="mobile-container">
+
+    <button class="floating-music-btn" id="musicBtn" onclick="toggleMusic()" title="Toggle Music">
+        <i class="fa-solid fa-music"></i>
+    </button>
+    <audio id="bgMusic" loop preload="auto">
+        <source src="songs.mp3" type="audio/mpeg">
+    </audio>
+
+    <button class="page-arrow prev" id="prevBtn" onclick="prevPage()"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="page-arrow next" id="nextBtn" onclick="nextPage()"><i class="fa-solid fa-chevron-right"></i></button>
+
+    <div class="viewport">
+
+        <!-- ================= HALAMAN 1 ================= -->
+        <section class="page-section active" id="page-1">
+            <div class="invite-header-card mx-auto" onclick="nextPage()">
+            <p class="font-cinzel text-uppercase mb-1" style="font-size: 2rem; letter-spacing: 2px; font-weight: 600;">YOU'RE INVITED!</p>
+            <p class="font-cinzel text-muted mb-1" style="font-size: 0.75rem; letter-spacing: 1px;">PRINTED WITH LOVE FOR OUR FAVORITE PEOPLE</p>
+            <i class="fa-solid fa-arrow-down fs-6"></i>
+            </div>
+
+            <div class="photobooth-slot">
+            <div class="photobooth-inner-shadow"></div>
+            <div class="photo-strip-printed">
+                <img src="1.png" alt="Ae-sun & Gwan-sik 1">
+                <img src="2.jpg" alt="Ae-sun & Gwan-sik 2">
+                <img src="3.png" alt="Ae-sun & Gwan-sik 3">
+            </div>
+            </div>
+
+            <div class="text-center">
+            <h1 class="font-script cover-names">Ae-sun & Gwan-sik</h1>
+            </div>
+        </section>
+
+        <!-- ================= HALAMAN 2 ================= -->
+        <section class="page-section" id="page-2">
+            <div class="quotes-box">
+            <p class="font-cinzel mb-0">
+                "In a world that constantly changes like the seasons, true love is finding the one person who remains your steady anchor. Through every storm, every quiet sunrise, and every winding path, walking hand in hand makes every season meaningful. Together, we learn that no matter what life brings, love is choosing to stand side by side, today and forever."
+            </p>
+            </div>
+        </section>
+
+        <!-- ================= HALAMAN 3 ================= -->
+        <section class="page-section" id="page-3">
+            <div class="monogram font-cinzel">A G</div>
+
+            <div class="couple-card">
+            <svg class="paperclip" viewBox="0 0 24 24" fill="none" stroke="#777" stroke-width="2">
+                <path d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48" />
+            </svg>
+            <div class="couple-polaroid">
+                <img src="aesun.png" alt="aesun">
+            </div>
+            <h3 class="font-script mb-1" style="font-size: 3rem; color: #3b2b23;">Ae-sun Oh</h3>
+            <p class="font-cinzel text-muted mb-1" style="font-size: 1rem; letter-spacing: 1px;">First Daughter of<br>Mr. Oh Han-gyu and Mrs. Jeon Jih-yo</p>
+            <p class="font-handwriting fs-5 mb-0" style="color: #6b5345;">@dlwlrma</p>
+            </div>
+
+            <div class="text-center font-script my-1 fs-2" style="color: #d9c5b2;">&</div>
+
+            <div class="couple-card2">
+            <svg class="paperclip2" viewBox="0 0 24 24" fill="none" stroke="#777" stroke-width="2">
+                <path d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48" />
+            </svg>
+            <div class="couple-polaroid2">
+                <img src="gwansik.png" alt="gwansik">
+            </div>
+            <h3 class="font-script mb-1" style="font-size: 3rem; color: #3b2b23;">Gwan-sik Yang</h3>
+            <p class="font-cinzel text-muted mb-1" style="font-size: 1rem; letter-spacing: 1px;">First Son of<br>Mr. Yang Keon-ho and Mrs. Kim Ji-woo</p>
+            <p class="font-handwriting fs-5 mb-0" style="color: #6b5345;">@bogummy</p>
+            </div>
+        </section>
+
+        <!-- ================= HALAMAN 4 ================= -->
+        <section class="page-section" id="page-4">
+            <h2 class="font-script text-center mb-3" style="font-size: 3.5rem; color: #e6d3be;">Our Story</h2>
+            <div>
+
+            <div class="story-polaroids">
+                <div class="story-pol" style="transform: rotate(-6deg);">
+                <img src="decor.png" alt="Story 1">
+                </div>
+                <div class="story-pol" style="transform: rotate(6deg);">
+                <img src="ring.png" alt="Story 2">
+                </div>
+            </div>
+            <div class="story-paper text-center">
+                <p class="font-cinzel" style="font-size: 0.8rem; line-height: 1.8; color: #3a2e28;">
+                OUR STORY BEGAN IN THE HEART OF JEJU, GROWING GENTLY THROUGH ALL OF LIFE'S SEASONS. WHAT STARTED WITH SMALL ACTS OF KINDNESS AND SHARED DREAMS BLOSSOMED INTO A LOVE BUILT ON PATIENCE, DEVOTION, AND COUNTLESS MEMORIES.<br><br>
+                THROUGH EVERY ADVENTURE AND HARDSHIP, WE HAVE STOOD SIDE BY SIDE, FINDING WARMTH AND COMFORT IN ONE ANOTHER EVERY SINGLE DAY.<br><br>
+                NOW, WE ARE THRIILLED TO TAKE THE NEXT STEP AND BEGIN OUR JOURNEY AS HUSBAND AND WIFE.
+                </p>
+            </div>
+            </div>
+        </section>
+
+        <!-- ================= HALAMAN 5 ================= -->
+        <section class="page-section" id="page-5">
+            <div class="gallery-booth-frame">
+            <div class="camera-lens"></div>
+            <div class="gallery-screen" id="galleryScreen">
+                <img src="gallery1.png" class="active" alt="Gallery 1">
+                <img src="gallery2.png" alt="Gallery 2">
+                <img src="gallery3.png" alt="Gallery 3">
+                <img src="gallery4.png" alt="Gallery 4">
+            </div>
+            <h2 class="font-script display-5 mt-3 mb-1" style="color: #3d2b24;">Our Gallery</h2>
+            <p class="font-cinzel px-2 mb-0" style="font-size: 0.6rem; line-height: 1.6; color: #4a382c;">
+                "EVERY PICTURE HOLDS A PIECE OF OUR STORY, CAPTURING THE LITTLE MOMENTS THAT MEAN THE MOST."
+            </p>
+            </div>
+        </section>
+
+        <!-- ================= HALAMAN 6 ================= -->
+        <section class="page-section" id="page-6">
+            <div class="rundown-gold-frame text-center">
+            <h2 class="font-cinzel mb-0" style="color: #e6d3be; font-size: 2.5rem; letter-spacing: 2px; font-weight: 550;">RUNDOWN</h2>
+
+            <div class="mb-4">
+                <p class="font-cinzel text-uppercase mb-3" style="font-size: 0.75rem; letter-spacing: 2px; color: #c4b09c; padding-top: 30px;">AKAD NIKAH</p>
+                <h3 class="font-script fs-2 mb-2" style="color: #fff;">Sabtu, 16 Januari 2027</h3>
+                <p class="font-cinzel mb-2" style="font-size: 0.75rem; letter-spacing: 1px; color: #d4c4b4;">10:00 - Selesai</p>
+                <p class="font-cinzel fst-italic px-2" style="font-size: 0.65rem; color: #d4c4b4;">
+                Herbs Garden, Fairmont Hotel, Jakarta Selatan
+                </p>
+                <a href="https://maps.app.goo.gl/Dn4e3Xer9spdiQbMA" target="_blank" class="btn-location font-cinzel">
+                <i class="fa-solid fa-location-dot me-1"></i> GOOGLE MAPS
+                </a>
+            </div>
+
+            <div>
+                <p class="font-cinzel text-uppercase mb-3" style="font-size: 0.75rem; letter-spacing: 2px; color: #c4b09c; padding-top: 30px;">RESEPSI</p>
+                <h3 class="font-script fs-2 mb-2" style="color: #fff;">Minggu, 17 Januari 2027</h3>
+                <p class="font-cinzel mb-2" style="font-size: 0.75rem; letter-spacing: 1px; color: #d4c4b4;">10:00 - Selesai</p>
+                <p class="font-cinzel fst-italic px-2" style="font-size: 0.65rem; color: #d4c4b4;">
+                Grand Ballroom, Fairmont Hotel, Jakarta Selatan
+                </p>
+                <a href="https://maps.app.goo.gl/Dn4e3Xer9spdiQbMA" target="_blank" class="btn-location font-cinzel">
+                <i class="fa-solid fa-location-dot me-1"></i> GOOGLE MAPS
+                </a>
+            </div>
+            </div>
+        </section>
+
+        <!-- ================= HALAMAN 7 ================= -->
+        <section class="page-section" id="page-7">
+            <div class="text-center mt-3">
+            <h2 class="font-script display-2 mb-4" style="color: #e6d3be;">Dresscode</h2>
+            <p class="font-cinzel" style="font-size: 1rem; line-height: 1.7; color: #d8c8b8;">
+                WE KINDLY INVITE YOU TO WEAR FORMAL ATTIRE IN THESE COLOR PALETTES.
+            </p>
+
+            <div class="color-swatch-group">
+                <div class="swatch" style="background-color: #2b1a14;"></div>
+                <div class="swatch" style="background-color: #341e09;"></div>
+                <div class="swatch" style="background-color: #78522b;"></div>
+                <div class="swatch" style="background-color: #e2c6a5;"></div>
+                <div class="swatch" style="background-color: #f4eee8;"></div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Bottom Navigation Bar -->
+    <nav class="bottom-nav">
+        <button class="nav-btn active" onclick="goToPage(1)">
+            <i class="fa-solid fa-camera"></i>
+            <span>Home</span>
+        </button>
+        <button class="nav-btn" onclick="goToPage(3)">
+            <i class="fa-solid fa-heart"></i>
+            <span>Profile</span>
+        </button>
+        <button class="nav-btn" onclick="goToPage(4)">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Story</span>
+        </button>
+        <button class="nav-btn" onclick="goToPage(5)">
+            <i class="fa-solid fa-images"></i>
+            <span>Gallery</span>
+        </button>
+        <button class="nav-btn" onclick="goToPage(6)">
+            <i class="fa-solid fa-calendar-days"></i>
+            <span>Event</span>
+        </button>
+    </nav>
+
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+
+
+</body>
+</html>
